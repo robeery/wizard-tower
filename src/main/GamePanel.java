@@ -78,7 +78,7 @@ public class GamePanel extends JPanel implements Runnable {
     public GamePanel() throws IOException, FontFormatException {
 
         this.setPreferredSize(new Dimension (screenWidth, screenHeight));
-        this.setBackground(Color.black);
+        this.setBackground(new Color(8, 14, 22)); //this color coresponds to the black tile
         this.setDoubleBuffered(true); //toate desenele componente se fac intr-un buffer si imbunatateste performanta
         this.addKeyListener(keyH);
         this.setFocusable(true);
