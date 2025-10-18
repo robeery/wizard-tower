@@ -81,3 +81,9 @@ Planned Features:
 **Coming Soon!** The game will be available to play once development is complete and published on [itch.io](https://itch.io).
 
 **Important:** Due to file size limitations, the resources folder is not included in this GitHub repository. The game will be fully playable once it's released on itch.io with all assets included.
+
+<p align="center">
+  <img src="gifs/hp64.gif" width="128" alt="Health Potion">
+  <img src="gifs/mana64.gif" width="128" alt="Mana Potion">
+  <img src="gifs/speed64.gif" width="128" alt="Speed Potion">
+</p>
