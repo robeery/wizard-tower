@@ -16,6 +16,29 @@ This project taught me fundamental concepts including object-oriented design, ga
 **Wizard Tower** is a top-down dungeon-crawler game where you control Zeleea through a mystical tower, ascending floor by floor. Each level presents a labyrinth filled with enemies, potions, Wizard NPCs and a key you have to find in order open the door to next level.
 
 ### Gameplay preview
+</br>
+<p align="center"><b>Getting Started</b></p>
+<p align="center">
+  <img src="gifs/intro.gif" width="600" alt="Homepage Demo">
+</p>
+<p align="center"><i>Main menu, movement, and first Wizard interaction</i></p>
+</br> </br>
+
+<p align="center"> <b>Combat & Spells</b> </p>
+<p align="center">
+  <img src="gifs/combat.gif" width="600" alt="Desen Demo">
+</p>
+<p align="center"> <i> Fire and Ice magic in action against enemies </i> </p>
+
+
+</br> </br>
+<p align="center"> <b>Consumables & Boss Teaser</b> </p>
+<p align="center">
+  <img src="gifs/boss.gif" width="600" alt="Video gallery Demo">
+</p>
+<p align="center"> <i>Using health and mana potions before facing the final challenge</i> </p>
+</br> </br>
+
 
 ### Core Mechanics
 
@@ -54,3 +77,7 @@ Planned Features:
 - 📱 Android Port: Potential mobile port depending on available time
 
 ## Where to play
+
+**Coming Soon!** The game will be available to play once development is complete and published on [itch.io](https://itch.io).
+
+**Important:** Due to file size limitations, the resources folder is not included in this GitHub repository. The game will be fully playable once it's released on itch.io with all assets included.
