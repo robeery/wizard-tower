@@ -36,6 +36,11 @@ public class Sound {
         //win
         soundURL[10]=getClass().getResource("/sound/victory.wav");
 
+        //coins
+        soundURL[11]=getClass().getResource("/sound/coins/coins_big_sound_effect.wav");
+        soundURL[12]=getClass().getResource("/sound/coins/coins_two_and_three_sound_effect.wav");
+        soundURL[13]=getClass().getResource("/sound/coins/coins_medium_sound_effect.wav");
+
 
 
     }

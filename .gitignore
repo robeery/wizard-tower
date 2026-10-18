@@ -30,3 +30,6 @@ bin/
 
 ###joc
 res/
+
+# db
+score.db

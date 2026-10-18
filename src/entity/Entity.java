@@ -8,6 +8,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 
+
 //clasa parinte pentru toate entitatile
 public class Entity {
 
@@ -74,6 +75,11 @@ public class Entity {
     public void damageReaction()
     {
 
+    }
+
+    public int onPickUp()
+    {
+      return 0;
     }
     public void speak()
     {
@@ -176,6 +182,8 @@ public class Entity {
                 worldY + gp.tileSize > gp.player.worldY - gp.player.screenY &&
                 worldY - gp.tileSize < gp.player.worldY + gp.player.screenY )
         {
+
+
             switch(direction)
             {
                 case "up":
@@ -284,6 +292,9 @@ public class Entity {
                          }
 
                     break;
+                default:
+                    image=this.image;
+                    break;
             }
             if(invincible==true)
             {
@@ -336,7 +347,9 @@ public class Entity {
 
             else if(name=="Door") g2.drawImage(image, screenX-32, screenY+4, gp.tileSize, gp.tileSize*2 , null);
             else {
-                g2.drawImage(image, screenX, screenY, null);
+                g2.drawImage(image != null ? image : this.image, screenX, screenY, null);
+                //g2.drawImage(image != null ? image : this.image, screenX, screenY, null);
+                //print(name + "\n");
             }
             g2.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, 1f));
         }

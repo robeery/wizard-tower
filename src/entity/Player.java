@@ -1,6 +1,7 @@
 package entity;
 
 import main.*;
+import object.OBJ_Coins;
 import object.OBJ_Fireball;
 import object.OBJ_Ice;
 
@@ -345,6 +346,32 @@ public class Player extends Entity {
 
                     //gp.playerSE();
 
+                    break;
+
+                case "Coins":
+
+
+                    int soundIndex = 12;
+                    if(gp.obj[gp.currentMap][i] instanceof OBJ_Coins)
+                    {
+                        OBJ_Coins coin = (OBJ_Coins) gp.obj[gp.currentMap][i];
+                        switch(coin.type)
+                        {
+                            case big:
+                                soundIndex = 11;
+                                break;
+                            case medium:
+                                soundIndex = 13;
+                                break;
+                            default:
+                                //one, two, three coin types
+                                break;
+                        }
+                    }
+
+                    gp.playSE(soundIndex);
+                    score+=gp.obj[gp.currentMap][i].onPickUp();
+                    gp.obj[gp.currentMap][i]=null;
                     break;
             }
         }

@@ -32,6 +32,34 @@ public class AssetSetter {
         gp.obj[mapNum][i].worldX=25*gp.tileSize-25;
         gp.obj[mapNum][i].worldY=7*gp.tileSize;
 
+        //TEMPORARY/DEBUG
+        //banutii sunt pusi la cheie momentan
+        i++;
+
+        gp.obj[mapNum][i]=new OBJ_Coins(gp, CoinType.one);
+        gp.obj[mapNum][i].worldX=84*gp.tileSize+32;
+        gp.obj[mapNum][i].worldY=36* gp.tileSize+100;
+        i++;
+
+        gp.obj[mapNum][i]=new OBJ_Coins(gp, CoinType.two);
+        gp.obj[mapNum][i].worldX=84*gp.tileSize+32;
+        gp.obj[mapNum][i].worldY=36* gp.tileSize+150;
+
+        i++;
+        gp.obj[mapNum][i]=new OBJ_Coins(gp, CoinType.three);
+        gp.obj[mapNum][i].worldX=84*gp.tileSize+32;
+        gp.obj[mapNum][i].worldY=36* gp.tileSize+200;
+
+        i++;
+        gp.obj[mapNum][i]=new OBJ_Coins(gp, CoinType.medium);
+        gp.obj[mapNum][i].worldX=84*gp.tileSize+32;
+        gp.obj[mapNum][i].worldY=36* gp.tileSize+250;
+
+        i++;
+        gp.obj[mapNum][i]=new OBJ_Coins(gp, CoinType.big);
+        gp.obj[mapNum][i].worldX=84*gp.tileSize+32;
+        gp.obj[mapNum][i].worldY=36* gp.tileSize+300;
+
 
         mapNum=1;
         i=0;
