@@ -9,6 +9,7 @@ import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
+import java.util.Random;
 
 public class Player extends Entity {
 
@@ -56,8 +57,10 @@ public class Player extends Entity {
         score=0;
         hasKey=0; //test
         //
+
         speed = 6; //=6 la final
         direction = "down";
+        //should be 1
         attack=1;
 
         projectile = new OBJ_Fireball(gp);
@@ -415,7 +418,23 @@ public class Player extends Entity {
                     else {
                         score += 100;
                         allTimeScore+=100;
+
+                        int dropXcoord, dropYcoord;
+                        dropXcoord = gp.monster[gp.currentMap][i].worldX;
+                        dropYcoord = gp.monster[gp.currentMap][i].worldY;
                         gp.monster[gp.currentMap][i] = null;
+                        int objectIndex = 0;
+                        while(gp.obj[gp.currentMap][objectIndex]!=null)
+                            objectIndex++;
+
+                        //this should do for now
+                        Random random = new Random();
+                        if (random.nextInt(100) < 35)
+                        {
+                            gp.obj[gp.currentMap][objectIndex] = new OBJ_Coins(gp, OBJ_Coins.getRandomCoinType());
+                            gp.obj[gp.currentMap][objectIndex].worldX = dropXcoord;
+                            gp.obj[gp.currentMap][objectIndex].worldY = dropYcoord;
+                        }
                     }
                 }
             }
@@ -561,8 +580,6 @@ public class Player extends Entity {
     }
     public void teleport(int map, int col, int row) //y=7
     {
-
-
         gp.currentMap=map;
         gp.player.worldX=gp.tileSize*col;
         gp.player.worldY=gp.tileSize*row;

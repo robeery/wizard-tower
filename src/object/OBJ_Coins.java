@@ -50,7 +50,7 @@ public class OBJ_Coins extends Entity {
         };
 
     }
-    CoinType getRandomCoinType()
+    public static CoinType getRandomCoinType()
     {
         Random random = new Random();
 

@@ -57,7 +57,7 @@ public class GamePanel extends JPanel implements Runnable {
 
     //ENTITATI SI OBIECTE
     public Player player = new Player(this, keyH);
-    public Entity obj[][] = new Entity[maxMap][10]; //numere maxime din joc in timp real
+    public Entity obj[][] = new Entity[maxMap][30]; //numere maxime din joc in timp real
     public Entity npc[][] = new Entity[maxMap][10];
     public Entity monster[][]= new Entity[maxMap][20];
     public ArrayList<Entity> projectileList=new ArrayList<>();
